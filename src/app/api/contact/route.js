@@ -15,6 +15,7 @@ import { siteConfig } from "@/data/siteConfig";
 // console so you can test the UI end-to-end.
 
 export async function POST(request) {
+  console.log(siteConfig.web3formsAccessKey)
   try {
     const body = await request.json();
     const { name, email, phone, quantity, message, product, company_website } = body;
@@ -67,7 +68,14 @@ export async function POST(request) {
       body: JSON.stringify(payload),
     });
 
-    const data = await res.json();
+    const rawText = await res.text();
+    let data;
+    try {
+      data = JSON.parse(rawText);
+    } catch {
+      console.error("[contact] Web3Forms returned non-JSON response:", rawText.slice(0, 300));
+      throw new Error("Web3Forms did not return a valid response — check your access key.");
+    }
 
     if (!res.ok || !data.success) {
       throw new Error(data.message || "Web3Forms rejected the submission.");

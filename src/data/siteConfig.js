@@ -35,7 +35,7 @@ export const siteConfig = {
 
   // Used by the /api/contact route to relay enquiries via Web3Forms.
   // Get a free key at https://web3forms.com using your business email.
-  web3formsAccessKey: process.env.WEB3FORMS_ACCESS_KEY || "",
+  web3formsAccessKey: process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "",
 };
 
 export function whatsappLink(message) {

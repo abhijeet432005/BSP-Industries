@@ -40,10 +40,10 @@ export const homeData = {
   ],
 
   featuredProductSlugs: [
-    "vx-780-angle-grinder",
-    "hl-500-pallet-truck",
-    "mg-210-mig-welder",
-    "pw-3-water-pump",
+    "ceramic-infrared-heater",
+    "alkaline-heater",
+    "popcorn-heating-elements",
+    "kettle-elements",
   ],
 
   process: {

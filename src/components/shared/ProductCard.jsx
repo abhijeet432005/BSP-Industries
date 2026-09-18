@@ -21,7 +21,7 @@ export function ProductCard({ product }) {
         )}
       </div>
       <div className="p-4">
-        <p className="font-mono text-[11px] uppercase tracking-wide text-muted">
+        <p className="font-mono text-[11px] uppercase tracking-wide text-muted line-clamp-1">
           {category?.name} · {product.model}
         </p>
         <h3 className="mt-1.5 font-display text-base font-medium leading-snug text-ink">

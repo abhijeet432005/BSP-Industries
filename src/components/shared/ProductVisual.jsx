@@ -13,12 +13,12 @@ export function ProductVisual({ product, className, activeImage }) {
     <div
       style={{ viewTransitionName: `product-visual-${product.slug}` }}
       className={cn(
-        "relative flex items-center justify-center overflow-hidden bg-[#EFEFEA]",
+        "relative flex items-center justify-center overflow-hidden bg-white",
         className
       )}
     >
       {imageSrc ? (
-        <Image src={imageSrc} fill className="object-cover" alt={product.name} />
+        <Image src={imageSrc} fill className="object-contain" alt={product.name} />
       ) : (
         <div
           className={cn(

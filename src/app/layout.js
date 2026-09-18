@@ -21,17 +21,28 @@ import { PageTransition } from "@/components/shared/PageTransition";
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | ${siteConfig.tagline}`,
-    template: `%s | ${siteConfig.name}`,
+    default: "Heating Element Manufacturer & Supplier | BPS Industries",
+    template: "%s | BPS Industries",
   },
-  description: siteConfig.description,
+  description:
+    "BPS Industries manufactures and supplies industrial, commercial, and domestic heating elements including tubular heaters, cartridge heaters, immersion heaters, finned heaters, infrared heaters, and custom heating solutions.",
+  alternates: {
+    canonical: siteConfig.url,
+  },
+
   keywords: [
-    "industrial equipment supplier",
-    "power tools supplier",
-    "material handling equipment",
-    "industrial pumps and motors",
-    "welding equipment supplier",
-    "safety equipment PPE supplier",
+    "heating elements",
+    "industrial heating elements",
+    "commercial heating elements",
+    "domestic heating elements",
+    "heating element manufacturer",
+    "heating element supplier",
+    "industrial heater manufacturer",
+    "electric heating elements",
+    "tubular heating elements",
+    "cartridge heaters",
+    "immersion heaters",
+    "BPS Industries",
   ],
   openGraph: {
     type: "website",
@@ -52,17 +63,32 @@ export default function RootLayout({ children }) {
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: siteConfig.name,
+    "@id": `${siteConfig.url}/#organization`,
+    name: "BPS Industries",
     url: siteConfig.url,
-    description: siteConfig.description,
+    description:
+      "BPS Industries manufactures and supplies industrial, commercial, and domestic heating elements for appliances, machinery, process equipment, and specialized heating applications.",
     email: siteConfig.email,
     telephone: siteConfig.phoneDisplay,
+
     address: {
       "@type": "PostalAddress",
       streetAddress: siteConfig.address.line1,
       addressLocality: siteConfig.address.line2,
       addressCountry: siteConfig.address.country,
     },
+
+    knowsAbout: [
+      "Heating Elements",
+      "Industrial Heating Elements",
+      "Commercial Heating Elements",
+      "Domestic Heating Elements",
+      "Tubular Heaters",
+      "Cartridge Heaters",
+      "Immersion Heaters",
+      "Finned Heaters",
+      "Infrared Heaters",
+    ],
   };
 
   return (

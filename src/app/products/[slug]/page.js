@@ -18,15 +18,47 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const product = getProductBySlug(slug);
+
   if (!product) return {};
+
+  const productUrl = `${siteConfig.url}/products/${product.slug}`;
 
   return {
     title: product.name,
     description: product.shortDescription,
-    alternates: { canonical: `/products/${product.slug}` },
+
+    alternates: {
+      canonical: productUrl,
+    },
+
     openGraph: {
+      type: "website",
+      url: productUrl,
       title: `${product.name} | ${siteConfig.name}`,
       description: product.shortDescription,
+      siteName: siteConfig.name,
+
+      ...(product.images?.length > 0 && {
+        images: product.images.map((image) => ({
+          url: `${siteConfig.url}${image}`,
+          alt: product.name,
+        })),
+      }),
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title: `${product.name} | ${siteConfig.name}`,
+      description: product.shortDescription,
+
+      ...(product.images?.[0] && {
+        images: [`${siteConfig.url}${product.images[0]}`],
+      }),
+    },
+
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }
@@ -39,21 +71,89 @@ export default async function ProductDetailPage({ params }) {
   const category = getCategoryBySlug(product.category);
   const related = getRelatedProducts(product);
 
-  const jsonLd = {
+  const sku =
+    product.specs?.find(
+      (spec) => spec.label.toLowerCase() === "sku"
+    )?.value;
+
+  const productUrl = `${siteConfig.url}/products/${product.slug}`;
+
+  const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
+
     name: product.name,
+
     description: product.description,
-    category: category?.name,
+
+    url: productUrl,
+
+    image:
+      product.images?.map(
+        (image) => `${siteConfig.url}${image}`
+      ) ?? [],
+
+    brand: {
+      "@type": "Brand",
+      name: siteConfig.name,
+    },
+
     model: product.model,
-    brand: { "@type": "Brand", name: siteConfig.name },
+
+    ...(sku && sku !== "—"
+      ? {
+        sku: sku,
+      }
+      : {}),
+
+    category: category?.name,
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: siteConfig.url,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Products",
+        item: `${siteConfig.url}/products`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: category?.name ?? product.category,
+        item: `${siteConfig.url}/products?category=${product.category}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: product.name,
+      },
+    ],
   };
 
   return (
     <div className="container-page py-10 md:py-14">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(productJsonLd),
+        }}
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd),
+        }}
       />
 
       {/* Breadcrumb */}
@@ -125,7 +225,7 @@ export default async function ProductDetailPage({ params }) {
               </ul>
             </div>
           )}
-          
+
           {/* Applications */}
           {product.applications?.length > 0 && (
             <div className="mt-9">

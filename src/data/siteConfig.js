@@ -8,7 +8,7 @@ export const siteConfig = {
   tagline: "Heating elements, built for every application.",
   description:
     "BPS Industries manufactures industrial, commercial, and domestic heating elements for appliances, machinery, process equipment, and specialized heating applications.",
-  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.bpsindustriesgroup.com/",
 
   // Dummy placeholders — update in .env.local
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY || "+91 98765 43210",

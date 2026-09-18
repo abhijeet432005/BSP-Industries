@@ -17,7 +17,7 @@ export function Footer() {
           <div>
             <Link href="/" className="flex items-center gap-2.5">
               <span className="flex h-8 w-8 items-center justify-center rounded-[3px] bg-ink font-display text-sm font-semibold text-white">
-                FF
+                BPS
               </span>
               <span className="font-display text-base font-medium text-ink">
                 {siteConfig.shortName}

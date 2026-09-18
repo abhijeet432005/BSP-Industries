@@ -3,11 +3,11 @@
 // See .env.example for the list of variables.
 
 export const siteConfig = {
-  name: "Forge & Field Equipment",
+  name: "BPS Industries",
   shortName: "BPS Industries",
-  tagline: "Industrial equipment, supplied right.",
+  tagline: "Heating elements, built for every application.",
   description:
-    "Forge & Field Equipment supplies industrial machinery, tools, and safety equipment to workshops, contractors, and manufacturing facilities. Browse the catalog and send an enquiry — our team quotes every order directly.",
+    "BPS Industries manufactures industrial, commercial, and domestic heating elements for appliances, machinery, process equipment, and specialized heating applications.",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.example.com",
 
   // Dummy placeholders — update in .env.local

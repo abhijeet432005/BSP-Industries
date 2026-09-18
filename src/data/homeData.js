@@ -2,10 +2,10 @@
 
 export const homeData = {
   hero: {
-    eyebrow: "Industrial equipment supplier",
-    heading: "Equipment for the shop floor, sourced and specced right.",
+    eyebrow: "Heating Element Manufacturer & Supplier",
+    heading: "Reliable heating elements, engineered for every application.",
     subheading:
-      "Forge & Field supplies power tools, material handling gear, pumps, welding equipment, and safety kit to workshops and contractors. Browse the catalog, then send an enquiry — no account or checkout needed.",
+      "BPS Industries manufactures and supplies industrial, commercial, and domestic heating elements for appliances, machinery, process equipment, kitchens, water heating, and specialized applications. Explore our product range and send an enquiry for the right heating solution.",
     primaryCta: { label: "Browse the catalog", href: "/products" },
     secondaryCta: { label: "Talk to sales", href: "/contact" },
     stats: [
@@ -69,8 +69,8 @@ export const homeData = {
   },
 
   ctaBanner: {
-    heading: "Sourcing equipment for a project?",
-    body: "Send us your requirement list and we'll come back with a single consolidated quote.",
+    heading: "Looking for the right heating element?",
+    body: "Share your heating requirements and our team will help you find the right solution.",
     cta: { label: "Send an enquiry", href: "/contact" },
   },
 };

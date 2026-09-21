@@ -73,6 +73,25 @@ export default function ContactPage() {
               ))}
             </ul>
           </div>
+
+          {siteConfig.companyDetails?.length > 0 && (
+            <>
+              <Separator className="my-8" />
+              <div>
+                <p className="font-mono text-xs uppercase tracking-wide text-muted">
+                  Company details
+                </p>
+                <ul className="mt-3 space-y-2 text-sm">
+                  {siteConfig.companyDetails.map((detail) => (
+                    <li key={detail.label} className="flex justify-between gap-4 text-ink">
+                      <span className="text-muted">{detail.label}</span>
+                      <span className="font-mono">{detail.value}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </>
+          )}
         </div>
 
         {/* Form column */}

@@ -27,6 +27,17 @@ export const siteConfig = {
     { day: "Sunday", time: "Closed" },
   ],
 
+  companyDetails: [
+    {
+      label: "GSTIN",
+      value: "07IKPPS7394L1ZT",
+    },
+    {
+      label: "Udyam Registration Number",
+      value: "UDYAM-DL-02-0122585",
+    },
+  ],
+
   // socials: {
   //   instagram: "https://instagram.com/",
   //   linkedin: "https://linkedin.com/",

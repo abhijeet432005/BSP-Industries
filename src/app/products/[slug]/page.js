@@ -172,7 +172,7 @@ export default async function ProductDetailPage({ params }) {
       <div className="mt-6 grid gap-10 lg:grid-cols-2 lg:gap-16">
         {/* Visual */}
         <div className="relative lg:sticky lg:top-24 lg:self-start">
-          <ProductGallery product={product} className="relative aspect-[4.5/4.5]" />
+          <ProductGallery product={product} className="relative aspect-[4/3]" />
           {product.badge && (
             <Badge variant="accent" className="absolute left-4 top-4">
               {product.badge}

@@ -67,6 +67,30 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Company / registration details */}
+      {aboutData.companyDetails?.length > 0 && (
+        <section className="border-b border-border bg-surface">
+          <div className="container-page py-14 md:py-20">
+            <p className="font-mono text-xs uppercase tracking-wide text-muted">
+              Company details
+            </p>
+            <h2 className="mt-2 text-2xl font-medium text-ink sm:text-3xl">
+              Registration information
+            </h2>
+            <dl className="mt-8 grid max-w-lg gap-x-8 gap-y-4 sm:grid-cols-2">
+              {aboutData.companyDetails.map((detail) => (
+                <div key={detail.label} className="border-t border-border-strong pt-3">
+                  <dt className="font-mono text-[11px] uppercase tracking-wide text-muted">
+                    {detail.label}
+                  </dt>
+                  <dd className="mt-1 text-sm text-ink">{detail.value}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+      )}
+
       <section className="bg-ink">
         <div className="container-page flex flex-col items-start justify-between gap-6 py-14 md:flex-row md:items-center">
           <div>

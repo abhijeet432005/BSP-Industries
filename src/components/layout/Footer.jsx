@@ -26,29 +26,31 @@ export function Footer() {
             <p className="mt-4 max-w-xs text-sm text-muted">
               {siteConfig.description}
             </p>
-            <div className="mt-5 flex items-center gap-3">
-              <a
-                href={siteConfig.socials.instagram}
-                aria-label="Instagram"
-                className="text-muted hover:text-ink"
-              >
-                <InstagramIcon className="h-[18px] w-[18px]" />
-              </a>
-              <a
-                href={siteConfig.socials.linkedin}
-                aria-label="LinkedIn"
-                className="text-muted hover:text-ink"
-              >
-                <LinkedinIcon className="h-[18px] w-[18px]" />
-              </a>
-              <a
-                href={siteConfig.socials.facebook}
-                aria-label="Facebook"
-                className="text-muted hover:text-ink"
-              >
-                <FacebookIcon className="h-[18px] w-[18px]" />
-              </a>
-            </div>
+            {siteConfig?.socials && (
+              <div className="mt-5 flex items-center gap-3">
+                <a
+                  href={siteConfig?.socials?.instagram}
+                  aria-label="Instagram"
+                  className="text-muted hover:text-ink"
+                >
+                  <InstagramIcon className="h-[18px] w-[18px]" />
+                </a>
+                <a
+                  href={siteConfig?.socials?.linkedin}
+                  aria-label="LinkedIn"
+                  className="text-muted hover:text-ink"
+                >
+                  <LinkedinIcon className="h-[18px] w-[18px]" />
+                </a>
+                <a
+                  href={siteConfig?.socials?.facebook}
+                  aria-label="Facebook"
+                  className="text-muted hover:text-ink"
+                >
+                  <FacebookIcon className="h-[18px] w-[18px]" />
+                </a>
+              </div>
+            )}
           </div>
 
           <div>

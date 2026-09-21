@@ -1,43 +1,64 @@
 // Content for the /about page.
 
 export const aboutData = {
-  heading: "Built by people who've worked the floor, not just sold the catalog.",
+  heading: "Heating elements built for industrial, commercial, and domestic applications.",
+
   intro:
-    "Forge & Field Equipment started as a small hand-tools counter and grew into a full-line industrial supplier because customers kept asking for the next category. We still run the business the same way: verify the spec, quote it straight, and stand behind what we send out.",
+    "BPS Industries manufactures and supplies heating elements for a wide range of industrial, commercial, and domestic applications. Our product range covers heating requirements for machinery, process equipment, commercial appliances, kitchens, water heating systems, and household appliances.",
 
   story: [
     {
-      heading: "Where it started",
-      body: "Forge & Field opened as a two-person hand-tools counter serving local repair shops. Customers asked for pumps, then welding gear, then safety equipment — the catalog grew to match what the neighbourhood actually needed.",
+      heading: "Focused on heating elements",
+      body:
+        "BPS Industries specializes in electric heating elements designed for different heating applications. Our range includes tubular, immersion, cartridge, finned, infrared, band, coil, and appliance-specific heating elements for varied equipment and operating requirements.",
     },
     {
-      heading: "How we work now",
-      body: "Every product on this site has passed through our own inspection process before it's listed. We don't drop-ship from unseen suppliers — if it's in the catalog, it's something we've physically checked.",
+      heading: "Solutions for different applications",
+      body:
+        "Heating requirements vary depending on the equipment, application, wattage, voltage, material, dimensions, shape, and mounting arrangement. BPS Industries provides heating elements in standard configurations along with customizable options for selected applications and customer requirements.",
     },
     {
-      heading: "Where we're headed",
-      body: "We're expanding the material handling and pumps range this year, based directly on what enquiries have been asking for. If you need something that isn't listed yet, ask — there's a good chance we can source it.",
+      heading: "Industrial, commercial & domestic range",
+      body:
+        "Our product range is organized across industrial, commercial, and domestic applications. From heating elements used in industrial machinery and process equipment to commercial kitchen equipment, water heating systems, and household appliances, we provide heating solutions for a broad range of applications.",
     },
   ],
 
   values: [
     {
-      title: "Verified specifications",
-      body: "Every spec sheet is checked against the manufacturer datasheet before it goes live.",
+      title: "Application-focused solutions",
+      body:
+        "We focus on the intended application and equipment requirements when selecting and supplying a suitable heating element.",
     },
     {
-      title: "Straight quoting",
-      body: "One quote, clearly itemised — no hidden handling or platform fees.",
+      title: "Flexible specifications",
+      body:
+        "Selected heating elements are available with different wattages, materials, dimensions, shapes, and fitting configurations to meet specific application requirements.",
     },
     {
-      title: "Real support",
-      body: "Enquiries are answered by staff who know the product line, not a call centre script.",
+      title: "Direct enquiry support",
+      body:
+        "Share your heating requirement, product details, quantity, or existing element specifications and our team can help with the appropriate heating-element configuration.",
     },
   ],
 
+  // Stats kept unchanged as requested.
   stats: [
     { value: "12", label: "Years supplying industrial equipment" },
     { value: "6", label: "Product categories" },
     { value: "1,200+", label: "Businesses served" },
+  ],
+
+
+
+  companyDetails: [
+    {
+      label: "GSTIN",
+      value: "07IKPPS7394L1ZT",
+    },
+    {
+      label: "Udyam Registration Number",
+      value: "UDYAM-DL-02-0122585",
+    },
   ],
 };

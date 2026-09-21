@@ -16,8 +16,8 @@ export const siteConfig = {
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "sales@forgeandfield.example",
 
   address: {
-    line1: "Plot 14, Sector 8, Industrial Estate",
-    line2: "Faridabad, Haryana 121003",
+    line1: "2nd Floor, Building No. 116",
+    line2: "Street No. 06, East Vinod Nagar, Delhi - 91",
     country: "India",
   },
 
@@ -27,11 +27,11 @@ export const siteConfig = {
     { day: "Sunday", time: "Closed" },
   ],
 
-  socials: {
-    instagram: "https://instagram.com/",
-    linkedin: "https://linkedin.com/",
-    facebook: "https://facebook.com/",
-  },
+  // socials: {
+  //   instagram: "https://instagram.com/",
+  //   linkedin: "https://linkedin.com/",
+  //   facebook: "https://facebook.com/",
+  // },
 
   // Used by the /api/contact route to relay enquiries via Web3Forms.
   // Get a free key at https://web3forms.com using your business email.

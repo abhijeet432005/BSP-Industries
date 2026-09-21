@@ -68,7 +68,7 @@ export default function HomePage() {
 
           </HeroReveal>
           <div data-reveal className="crosshair relative hidden aspect-[4/3.4] bg-[#EFEFEA] md:block overflow-hidden rounded-2xl">
-            <Image src="/hero2.webp" alt="hero-image" fill className="object-cover" />
+            <Image src="/hero2.webp" alt="hero-image" fill className="object-cover" priority />
           </div>
         </div>
       </section>

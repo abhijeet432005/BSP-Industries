@@ -12,6 +12,7 @@ import {
   SheetContent,
   SheetTitle,
 } from "@/components/ui/sheet";
+import Image from "next/image";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -33,12 +34,18 @@ export function Navbar() {
           className="flex items-center gap-2.5"
           onClick={() => setOpen(false)}
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-[3px] bg-ink font-display text-sm font-semibold text-white">
-            BPS
+          <span className="relative flex h-18 w-28 items-center justify-center overflow-hidden">
+            <Image
+              src="/logo-1.png"
+              alt="Logo"
+              fill
+              className="object-contain"
+              priority
+            />
           </span>
-          <span className="font-display text-[15px] font-medium leading-tight text-ink sm:text-base">
+          {/* <span className="font-display text-[15px] font-medium leading-tight text-ink sm:text-base">
             {siteConfig.shortName}
-          </span>
+          </span> */}
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

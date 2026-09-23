@@ -8,6 +8,7 @@ import {
   LinkedinIcon,
   FacebookIcon,
 } from "@/components/shared/SocialIcons";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -16,12 +17,18 @@ export function Footer() {
         <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
             <Link href="/" className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-[3px] bg-ink font-display text-sm font-semibold text-white">
-                BPS
+              <span className="relative flex h-20 w-35 items-center justify-center overflow-hidden">
+                <Image
+                  src="/logo-1.png"
+                  alt="Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
               </span>
-              <span className="font-display text-base font-medium text-ink">
+              {/* <span className="font-display text-base font-medium text-ink">
                 {siteConfig.shortName}
-              </span>
+              </span> */}
             </Link>
             <p className="mt-4 max-w-xs text-sm text-muted">
               {siteConfig.description}

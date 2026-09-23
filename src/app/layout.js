@@ -21,11 +21,11 @@ import { PageTransition } from "@/components/shared/PageTransition";
 export const metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Heating Element Manufacturer & Supplier | BPS Industries",
+    default: "Heating Element Manufacturer & Supplier in India",
     template: "%s | BPS Industries",
   },
   description:
-    "BPS Industries manufactures and supplies industrial, commercial, and domestic heating elements including tubular heaters, cartridge heaters, immersion heaters, finned heaters, infrared heaters, and custom heating solutions.",
+    "BPS Industries is a heating element manufacturer and supplier in India for industrial, commercial, and domestic applications, including tubular, cartridge, immersion, finned, and infrared heaters.",
   alternates: {
     canonical: siteConfig.url,
   },
@@ -66,6 +66,7 @@ export default function RootLayout({ children }) {
     "@id": `${siteConfig.url}/#organization`,
     name: "BPS Industries",
     url: siteConfig.url,
+    logo: `${siteConfig.url}/logo-1.png`,
     description:
       "BPS Industries manufactures and supplies industrial, commercial, and domestic heating elements for appliances, machinery, process equipment, and specialized heating applications.",
     email: siteConfig.email,
@@ -96,7 +97,9 @@ export default function RootLayout({ children }) {
       <body className="flex min-h-screen flex-col antialiased">
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
         />
         <SmoothScrollProvider>
           <Navbar />

@@ -65,7 +65,7 @@ export function Navbar() {
           <span className="relative flex h-18 w-28 items-center justify-center overflow-hidden">
             <Image
               src="/logo-1.png"
-              alt="Logo"
+              alt="BPS Industries"
               fill
               className="object-contain"
               priority

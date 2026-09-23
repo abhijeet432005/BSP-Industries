@@ -13,8 +13,9 @@ import { CountUpStat } from "@/components/shared/CountUpStat";
 import Image from "next/image";
 
 export const metadata = {
-  title: `${siteConfig.name} — ${siteConfig.tagline}`,
-  description: siteConfig.description,
+  title: "Heating Element Manufacturer & Supplier in India",
+  description:
+    "BPS Industries is a heating element manufacturer and supplier in India for industrial, commercial, and domestic heating applications.",
   alternates: { canonical: "/" },
 };
 
@@ -68,7 +69,7 @@ export default function HomePage() {
 
           </HeroReveal>
           <div data-reveal className="crosshair relative hidden aspect-[4/3.4] bg-[#EFEFEA] md:block overflow-hidden rounded-2xl">
-            <Image src="/hero2.webp" alt="hero-image" fill className="object-cover" priority />
+            <Image src="/hero2.webp" alt="BPS Industries heating elements for industrial, commercial, and domestic applications" fill className="object-cover" priority />
           </div>
         </div>
       </section>

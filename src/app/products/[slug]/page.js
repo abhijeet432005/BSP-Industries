@@ -2,6 +2,7 @@ import { TransitionLink as Link } from "@/components/shared/TransitionLink";
 import { notFound } from "next/navigation";
 import { ChevronRight, Check, MessageCircle } from "lucide-react";
 import { products, getProductBySlug, getRelatedProducts } from "@/data/productData";
+import { productSeo } from "@/data/seoData";
 import { getCategoryBySlug } from "@/data/categoryData";
 import { siteConfig, whatsappLink } from "@/data/siteConfig";
 import { ProductVisual } from "@/components/shared/ProductVisual";
@@ -22,10 +23,12 @@ export async function generateMetadata({ params }) {
   if (!product) return {};
 
   const productUrl = `${siteConfig.url}/products/${product.slug}`;
+  const seo = productSeo[product.slug];
+  const description = seo?.description || product.shortDescription;
 
   return {
-    title: product.name,
-    description: product.shortDescription,
+    title: seo?.title || product.name,
+    description,
 
     alternates: {
       canonical: productUrl,
@@ -35,13 +38,13 @@ export async function generateMetadata({ params }) {
       type: "website",
       url: productUrl,
       title: `${product.name} | ${siteConfig.name}`,
-      description: product.shortDescription,
+      description,
       siteName: siteConfig.name,
 
       ...(product.images?.length > 0 && {
         images: product.images.map((image) => ({
           url: `${siteConfig.url}${image}`,
-          alt: product.name,
+          alt: `${product.name} heating element product image`,
         })),
       }),
     },
@@ -49,7 +52,7 @@ export async function generateMetadata({ params }) {
     twitter: {
       card: "summary_large_image",
       title: `${product.name} | ${siteConfig.name}`,
-      description: product.shortDescription,
+      description,
 
       ...(product.images?.[0] && {
         images: [`${siteConfig.url}${product.images[0]}`],
@@ -81,6 +84,7 @@ export default async function ProductDetailPage({ params }) {
   const productJsonLd = {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": productUrl,
 
     name: product.name,
 
@@ -96,6 +100,10 @@ export default async function ProductDetailPage({ params }) {
     brand: {
       "@type": "Brand",
       name: siteConfig.name,
+    },
+
+    manufacturer: {
+      "@id": `${siteConfig.url}/#organization`,
     },
 
     model: product.model,
@@ -145,14 +153,14 @@ export default async function ProductDetailPage({ params }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(productJsonLd),
+          __html: JSON.stringify(productJsonLd).replace(/</g, "\\u003c"),
         }}
       />
 
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(breadcrumbJsonLd),
+          __html: JSON.stringify(breadcrumbJsonLd).replace(/</g, "\\u003c"),
         }}
       />
 
@@ -264,6 +272,12 @@ export default async function ProductDetailPage({ params }) {
           <h2 className="text-xl font-medium text-ink sm:text-2xl">
             More from {category?.name}
           </h2>
+          <Link
+            href={`/products?category=${product.category}`}
+            className="mt-2 inline-flex text-sm font-medium text-accent-dark hover:text-ink"
+          >
+            Explore all {category?.name} products
+          </Link>
           <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {related.map((p) => (
               <ProductCard key={p.slug} product={p} />

@@ -20,7 +20,7 @@ export function Footer() {
               <span className="relative flex h-20 w-35 items-center justify-center overflow-hidden">
                 <Image
                   src="/logo-1.png"
-                  alt="Logo"
+                  alt="BPS Industries"
                   fill
                   className="object-contain"
                   priority

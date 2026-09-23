@@ -18,7 +18,12 @@ export function ProductVisual({ product, className, activeImage }) {
       )}
     >
       {imageSrc ? (
-        <Image src={imageSrc} fill className="object-contain" alt={product.name} />
+        <Image
+          src={imageSrc}
+          fill
+          className="object-contain"
+          alt={`${product.name} heating element product image`}
+        />
       ) : (
         <div
           className={cn(

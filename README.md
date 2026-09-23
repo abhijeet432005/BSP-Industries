@@ -1,4 +1,4 @@
-# Forge & Field Equipment — Catalog Website
+# BPS Industries Equipment — Catalog Website
 
 A responsive, SEO-ready catalog website built with Next.js (App Router),
 Tailwind CSS, shadcn-style UI components, GSAP, and Lenis smooth scroll.
@@ -8,7 +8,7 @@ browse products and categories, then send an enquiry (via a form, WhatsApp,
 phone, or email) and your sales team quotes them directly.
 
 All content is currently **dummy/placeholder data** for a sample business
-("Forge & Field Equipment", an industrial equipment supplier). Replace it
+("BPS Industries Equipment", an industrial equipment supplier). Replace it
 with your real business details — see "Editing your content" below.
 
 ## 1. Install & run
@@ -55,13 +55,13 @@ and logged to your terminal instead of emailed — useful for testing.
 
 Everything you'll want to update regularly lives in `src/data/`:
 
-| File | What it controls |
-|---|---|
-| `siteConfig.js` | Business name, tagline, description, address, hours, socials |
-| `categoryData.js` | The 6 product categories (name, description, icon) |
-| `productData.js` | Every product: name, category, specs, features, description |
-| `homeData.js` | Homepage hero text, highlights, featured picks, process steps |
-| `aboutData.js` | About page story, values, stats |
+| File              | What it controls                                              |
+| ----------------- | ------------------------------------------------------------- |
+| `siteConfig.js`   | Business name, tagline, description, address, hours, socials  |
+| `categoryData.js` | The 6 product categories (name, description, icon)            |
+| `productData.js`  | Every product: name, category, specs, features, description   |
+| `homeData.js`     | Homepage hero text, highlights, featured picks, process steps |
+| `aboutData.js`    | About page story, values, stats                               |
 
 **To add a new product:** open `productData.js`, copy an existing product
 object, give it a unique `slug`, and fill in the fields. It will

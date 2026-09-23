@@ -9,7 +9,7 @@ export const homeData = {
     primaryCta: { label: "Browse the catalog", href: "/products" },
     secondaryCta: { label: "Talk to sales", href: "/contact" },
     stats: [
-      { value: "500+", label: "SKUs across 6 categories" },
+      { value: "12", label: "Years of experience" },
       { value: "1,200+", label: "Businesses supplied" },
       { value: "24 hr", label: "Typical quote turnaround" },
     ],

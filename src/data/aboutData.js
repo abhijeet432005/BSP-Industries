@@ -45,7 +45,7 @@ export const aboutData = {
   // Stats kept unchanged as requested.
   stats: [
     { value: "12", label: "Years supplying industrial equipment" },
-    { value: "6", label: "Product categories" },
+    { value: "3", label: "Product categories" },
     { value: "1,200+", label: "Businesses served" },
   ],
 

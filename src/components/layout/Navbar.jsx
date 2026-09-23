@@ -2,7 +2,7 @@
 
 import { TransitionLink as Link } from "@/components/shared/TransitionLink";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu, ArrowRight } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 import { Button } from "@/components/ui/button";
@@ -26,8 +26,36 @@ export function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  const [hidden, setHidden] = useState(false);
+  const lastScrollY = useRef(0);
+
+  useEffect(() => {
+    const threshold = 80; // itni scroll hone tak navbar hamesha dikhega
+
+    function handleScroll() {
+      const currentY = window.scrollY;
+
+      if (currentY < threshold) {
+        setHidden(false);
+      } else if (currentY > lastScrollY.current) {
+        setHidden(true); // neeche scroll -> hide
+      } else {
+        setHidden(false); // upar scroll -> show
+      }
+
+      lastScrollY.current = currentY;
+    }
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-30 border-b border-border bg-background/90 backdrop-blur">
+    <header
+      className={`sticky top-0 z-30 border-b border-border bg-background/90 backdrop-blur transition-transform duration-300 ${
+        hidden ? "-translate-y-full" : "translate-y-0"
+      }`}
+    >
       <div className="container-page flex h-16 items-center justify-between md:h-20">
         <Link
           href="/"

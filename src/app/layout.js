@@ -1,4 +1,5 @@
 import { Toaster } from "sonner";
+import { Analytics } from "@vercel/analytics/next";
 
 // Self-hosted fonts (Fontsource) — no runtime fetch to Google Fonts needed.
 import "@fontsource/space-grotesk/500.css";
@@ -108,6 +109,7 @@ export default function RootLayout({ children }) {
         </SmoothScrollProvider>
         <WhatsAppButton />
         <Toaster position="bottom-right" richColors />
+        <Analytics />
       </body>
     </html>
   );

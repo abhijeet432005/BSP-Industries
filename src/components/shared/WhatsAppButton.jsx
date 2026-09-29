@@ -13,20 +13,20 @@ function WhatsAppIcon(props) {
 export function WhatsAppButton({ message }) {
   const defaultMessage =
     message ||
-    `*We are BPS Industries, manufacturers of Industrial Heaters.*
+`*We are BPS Industries, manufacturers of Industrial Heaters.*
 
-  *Our products include:*
+*Our products include:*
 
-  *1)* *High Watt Density Cartridge Heater*  
-  *2)* *Low Watt Density Cartridge Heater*  
-  *3)* *Mica & Ceramic Band Heater*  
-  *4)* *Industrial Tubular Heater*  
-  *5)* *Nozzle Heater*  
-  *6)* *Coil Heater*  
-  *7)* *Etc.*
+*1)* *High Watt Density Cartridge Heater*  
+*2)* *Low Watt Density Cartridge Heater*  
+*3)* *Mica & Ceramic Band Heater*  
+*4)* *Industrial Tubular Heater*  
+*5)* *Nozzle Heater*  
+*6)* *Coil Heater*  
+*7)* *Etc.*
 
 *Please share your requirements in detail, and we shall be happy to assist you with the requisite details.*
-    `;
+`;
 
   return (
     <a

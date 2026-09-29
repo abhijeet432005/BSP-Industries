@@ -40,10 +40,10 @@ export const homeData = {
   ],
 
   featuredProductSlugs: [
-    "ceramic-infrared-heater",
-    "alkaline-heater",
-    "popcorn-heating-elements",
-    "kettle-elements",
+    "low-density-cartridge-heater",
+    "coil-heater",
+    "high-density-cartridge-heater",
+    "immersion-heater",
   ],
 
   process: {

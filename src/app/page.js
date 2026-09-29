@@ -69,7 +69,7 @@ export default function HomePage() {
 
           </HeroReveal>
           <div data-reveal className="crosshair relative hidden aspect-[4/3.4] bg-[#EFEFEA] md:block overflow-hidden rounded-2xl">
-            <Image src="/hero2.webp" alt="BPS Industries heating elements for industrial, commercial, and domestic applications" fill className="object-cover" priority />
+            <Image src="/hero5.png" alt="BPS Industries heating elements for industrial, commercial, and domestic applications" fill className="object-cover" priority />
           </div>
         </div>
       </section>

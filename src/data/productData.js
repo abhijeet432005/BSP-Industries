@@ -99,9 +99,8 @@ export const products = [
     ],
 
     images: [
-      "/Industrial Heater/Cartridge Heater 2.webp",
-      "/Industrial Heater/Cartridge Heater.webp",
-      "/Industrial Heater/Cartridge Heater 3.webp"
+      "/Industrial Heater/low density .png",
+      "/Industrial Heater/low density 2.webp",
     ]
   },
 
@@ -199,519 +198,10 @@ export const products = [
     ],
 
     images: [
-      "/Industrial Heater/Cartridge Heater.webp",
-      "/Industrial Heater/Cartridge Heater 2.webp",
-      "/Industrial Heater/Cartridge Heater 3.webp"
-    ]
-  },
-
-  {
-    slug: "coil-heater",
-    name: "Coil Heater",
-    category: "industrial-heater",
-    model: "Coil Heater",
-    badge: "Industrial",
-
-    shortDescription:
-      "Compact coiled heating elements designed for precise localized heating of hot runner systems, injection moulding equipment, nozzles, manifolds, and other industrial components.",
-
-    description:
-      "The Coil Heater is a compact electric heating element designed for localized and controlled heating where installation space is limited. Its coiled construction allows the heater to follow the shape of the component being heated, making it suitable for cylindrical and application-specific heating surfaces. Coil heaters are widely used in hot runner systems, injection moulding machines, extrusion equipment, blow moulding machines, thermoforming equipment, packaging machinery, nozzles, and manifolds. BPS Industries provides customizable Coil Heaters with configurations developed according to the required heating area, dimensions, electrical rating, and equipment design. The compact form factor makes them suitable for applications requiring concentrated heating around nozzles, barrels, dies, and other industrial components.",
-
-    features: [
-      "Compact coiled electric heating element",
-      "Designed for localized and controlled heating",
-      "Suitable for compact and restricted installation spaces",
-      "Coiled construction for application-specific fitting",
-      "Suitable for hot runner systems",
-      "Suitable for injection moulding machines",
-      "Suitable for extrusion machines",
-      "Suitable for blow moulding machines",
-      "Suitable for thermoforming equipment",
-      "Suitable for packaging machinery",
-      "Suitable for heating nozzles and manifolds",
-      "Customizable wattage according to application requirements",
-      "Customizable voltage according to equipment requirements",
-      "Customizable coil diameter and dimensions",
-      "Customizable heating length",
-      "Application-specific heating configuration"
-    ],
-
-    specs: [
-      {
-        label: "Product Type",
-        value: "Coil Heater"
-      },
-      {
-        label: "SKU",
-        value: "—"
-      },
-      {
-        label: "Wattage",
-        value: "Customizable"
-      },
-      {
-        label: "Voltage",
-        value: "Customizable"
-      },
-      {
-        label: "Material",
-        value: "Application Specific"
-      },
-      {
-        label: "Coil Diameter",
-        value: "Customizable"
-      },
-      {
-        label: "Heating Length",
-        value: "Customizable"
-      },
-      {
-        label: "Shape",
-        value: "Coiled / Application Specific"
-      },
-      {
-        label: "Heating Method",
-        value: "Electrical Resistance"
-      },
-      {
-        label: "Configuration",
-        value: "Customizable"
-      }
-    ],
-
-    applications: [
-      "Hot Runner Systems",
-      "Injection Moulding Machines",
-      "Extrusion Machines",
-      "Blow Moulding Machines",
-      "Thermoforming Machines",
-      "Injection Moulding Nozzles",
-      "Hot Runner Nozzles",
-      "Manifolds",
-      "Packaging Machinery"
-    ],
-
-    images: [
-      "/Industrial Heater/Coil Heater 2.webp",
-      "/Industrial Heater/Coil Heater.webp",
-    ]
-  },
-
-  {
-    slug: "porcelain-heater",
-    name: "Porcelain Heater",
-    category: "industrial-heater",
-    model: "Porcelain Heater",
-    badge: "Industrial",
-
-    shortDescription:
-      "Industrial porcelain heating elements designed for efficient heating of water, oil, chemical solutions, plating baths, ovens, and other process applications.",
-
-    description:
-      "Porcelain Heaters are robust industrial heating elements designed for direct and indirect heating applications. Constructed with ceramic porcelain insulation around a resistance heating element, they provide reliable heat transfer for a wide range of industrial processes. These heaters are commonly used for heating water, oil, foodstuff, alkaline solutions, anodizing and plating baths, chemical processing tanks, medium-size ovens, powder coating booths, and chemical and paint industry equipment. The heater can be supplied in different wattages, diameters, voltages, and customized lengths according to the application's heating and installation requirements.",
-
-    features: [
-      "High-temperature ceramic porcelain insulation",
-      "Suitable for industrial liquid and process heating",
-      "Available in 500W, 1000W and 2000W configurations",
-      "Voltage options of 220-240V and 415-440V",
-      "Available in multiple heater diameters",
-      "Customizable heater length",
-      "Suitable for horizontal and vertical installation",
-      "Can be supplied with suitable mounting arrangements",
-      "Designed for water, oil and foodstuff heating",
-      "Suitable for anodizing and plating baths",
-      "Suitable for alkaline and chemical solutions",
-      "Suitable for ovens and powder coating applications"
-    ],
-
-    specs: [
-      {
-        label: "Product Type",
-        value: "Porcelain Heater"
-      },
-      {
-        label: "Wattage",
-        value: "500W | 1000W | 2000W | Customizable"
-      },
-      {
-        label: "Voltage",
-        value: "220-240V | 415-440V"
-      },
-      {
-        label: "Material",
-        value: "Ceramic / Porcelain"
-      },
-      {
-        label: "Heater Diameter",
-        value: "32mm | 35mm | 45mm | 48mm | 80mm"
-      },
-      {
-        label: "Length",
-        value: "Customizable"
-      },
-      {
-        label: "Master Packing",
-        value: "25 Pcs."
-      },
-      {
-        label: "Mounting",
-        value: "As per application"
-      },
-      {
-        label: "Installation",
-        value: "Horizontal / Vertical"
-      }
-    ],
-
-    applications: [
-      "Water Heating",
-      "Foodstuff Heating",
-      "Oil Heating",
-      "Anodizing Baths",
-      "Plating Baths",
-      "Alkaline Solutions",
-      "Phosphoric Acid Processing",
-      "Chromic Acid Processing",
-      "Medium-Size Ovens",
-      "Powder Coating Booths",
-      "Chemical Industry",
-      "Paint Industry"
-    ],
-
-    images: [
-      "/Industrial Heater/Porcelain-Heater.webp"
-    ]
-  },
-
-  {
-    slug: "u-nipple-sterilizer-element",
-    name: "U Nipple Sterilizer Element",
-    category: "industrial-heater",
-    model: "U Nipple Sterilizer Element",
-    badge: "Sterilizer",
-
-    shortDescription:
-      "U-shaped nipple heating elements designed for efficient water heating in sterilizers, medical equipment, food processing, laboratories, and other heating applications.",
-
-    description:
-      "The U Nipple Sterilizer Element is a tubular electric heating element designed to rapidly and consistently heat water in sterilization and process-heating equipment. Its U-shaped construction provides an extended heating surface while the nipple mounting arrangement allows the element to be securely installed through a tank or vessel. Available in stainless steel and copper constructions, the element can be supplied in different wattages and lengths to suit specific equipment requirements. It is suitable for medical equipment sterilization, food processing, water treatment, laboratory sterilization, and beauty and spa equipment.",
-
-    features: [
-      "U-shaped tubular heating element",
-      "Available in stainless steel and copper construction",
-      "Designed for water heating and sterilization equipment",
-      "Available in 500W, 1500W, 2000W and 3000W variants",
-      "220-240V operating voltage",
-      "Available in 12\", 18\" and 24\" lengths",
-      "Custom lengths available as required",
-      "8.7mm standard element diameter",
-      "Nipple-mounted design for installation through tanks and vessels",
-      "Suitable for medical, laboratory, food processing and water treatment applications"
-    ],
-
-    specs: [
-      {
-        label: "Product Type",
-        value: "U Nipple Sterilizer Element"
-      },
-      {
-        label: "SKU",
-        value: "AE-20-23"
-      },
-      {
-        label: "Wattage",
-        value: "500W | 1500W | 2000W | 3000W | Customizable"
-      },
-      {
-        label: "Voltage",
-        value: "220-240V"
-      },
-      {
-        label: "Material",
-        value: "Stainless Steel | Copper"
-      },
-      {
-        label: "Diameter",
-        value: "8.7mm"
-      },
-      {
-        label: "Length",
-        value: "12\" | 18\" | 24\" | Customizable"
-      },
-      {
-        label: "Master Packing",
-        value: "25 Pcs."
-      },
-      {
-        label: "Shape",
-        value: "U Type"
-      },
-      {
-        label: "Mounting",
-        value: "Nipple Mount"
-      }
-    ],
-
-    applications: [
-      "Medical Equipment Sterilization",
-      "Food Processing",
-      "Water Treatment",
-      "Laboratory Sterilization",
-      "Beauty and Spa Equipment Sterilization"
-    ],
-
-    images: [
-      "/Industrial Heater/U Nipple Sterilizer Element.webp",
-      "/Industrial Heater/U Nipple Sterilizer Element 2.webp",
-      "/Industrial Heater/U Nipple Sterilizer Element 3.webp"
-    ]
-  },
-
-  {
-    slug: "u-l-nipple-sterilizer-element",
-    name: "U+L Nipple Sterilizer Element",
-    category: "industrial-heater",
-    model: "U+L Nipple Sterilizer Element",
-    badge: "Sterilizer",
-
-    shortDescription:
-      "U+L shaped tubular heating elements designed for reliable heating in sterilizers, medical equipment, water treatment, food processing, and laboratory applications.",
-
-    description:
-      "The U+L Nipple Sterilizer Element is a tubular electric heating element designed for efficient and controlled heating in sterilization and process-heating equipment. Its U+L configuration provides an extended heating surface while the nipple mounting arrangement allows convenient installation through tanks, vessels, and sterilizer equipment. Available in stainless steel and copper constructions, the element is offered in multiple wattage and length options and can be customized according to specific equipment and heating requirements. It is suitable for medical equipment sterilization, food processing, water treatment, laboratory sterilization, and beauty and spa equipment.",
-
-    features: [
-      "U+L shaped tubular heating element",
-      "Available in stainless steel and copper construction",
-      "Nipple mounting design for equipment installation",
-      "Available in 500W, 1500W, 2000W and 3000W variants",
-      "220-240V voltage configuration",
-      "Available in 12\", 18\" and 24\" lengths",
-      "Customizable length according to requirements",
-      "Available in 8mm and 10.8mm diameter options",
-      "Suitable for sterilization and water-heating equipment",
-      "Suitable for medical, laboratory and food-processing applications"
-    ],
-
-    specs: [
-      {
-        label: "Product Type",
-        value: "U+L Nipple Sterilizer Element"
-      },
-      {
-        label: "SKU",
-        value: "AE-20-23"
-      },
-      {
-        label: "Wattage",
-        value: "500W | 1500W | 2000W | 3000W | Customizable"
-      },
-      {
-        label: "Voltage",
-        value: "220-240V"
-      },
-      {
-        label: "Material",
-        value: "Stainless Steel | Copper"
-      },
-      {
-        label: "Master Packing",
-        value: "25 Pcs."
-      },
-      {
-        label: "Length",
-        value: "12\" | 18\" | 24\" | Customizable"
-      },
-      {
-        label: "Diameter",
-        value: "8mm | 10.8mm"
-      },
-      {
-        label: "Shape",
-        value: "U+L Type"
-      },
-      {
-        label: "Fittings",
-        value: "Nipple | Brass"
-      }
-    ],
-
-    applications: [
-      "Medical Equipment Sterilization",
-      "Food Processing",
-      "Water Treatment",
-      "Laboratory Sterilization",
-      "Beauty and Spa Equipment Sterilization"
-    ],
-
-    images: [
-      "/Industrial Heater/U+L Nipple Sterilizer Element.webp",
-    ]
-  },
-
-  {
-    slug: "cmo-band-nipple-sterilizer-element",
-    name: "CMO Band Nipple Sterilizer Element",
-    category: "industrial-heater",
-    model: "CMO Band Nipple Sterilizer Element",
-    badge: "Sterilizer",
-
-    shortDescription:
-      "Band-type nipple heating elements designed for reliable heating in sterilizers, medical equipment, food processing, water treatment, and laboratory applications.",
-
-    description:
-      "The CMO Band Nipple Sterilizer Element is an electric heating element designed for sterilization and process-heating equipment. Its band-type heating configuration provides a practical solution for heating applications where the element is installed through a nipple-mounted connection. Available in stainless steel and copper constructions, it is offered in multiple wattage and length options to accommodate different equipment requirements. The element is suitable for medical equipment sterilization, food processing, water treatment, laboratory sterilization, and beauty and spa equipment sterilization.",
-
-    features: [
-      "Band-type heating element design",
-      "Nipple mounting configuration",
-      "Available in stainless steel and copper",
-      "Available in 500W, 1500W, 2000W and 3000W variants",
-      "220-240V voltage configuration",
-      "Available in 12\", 18\" and 24\" lengths",
-      "Customizable length according to requirements",
-      "Available in 8mm and 10.8mm diameter options",
-      "Brass nipple fitting option",
-      "Suitable for sterilization and water-treatment equipment"
-    ],
-
-    specs: [
-      {
-        label: "Product Type",
-        value: "CMO Band Nipple Sterilizer Element"
-      },
-      {
-        label: "SKU",
-        value: "—"
-      },
-      {
-        label: "Wattage",
-        value: "500W | 1500W | 2000W | 3000W | Customizable"
-      },
-      {
-        label: "Voltage",
-        value: "220-240V"
-      },
-      {
-        label: "Material",
-        value: "Stainless Steel | Copper"
-      },
-      {
-        label: "Master Packing",
-        value: "25 Pcs."
-      },
-      {
-        label: "Length",
-        value: "12\" | 18\" | 24\" | Customizable"
-      },
-      {
-        label: "Diameter",
-        value: "8mm | 10.8mm"
-      },
-      {
-        label: "Element Type",
-        value: "Band Type"
-      },
-      {
-        label: "Fitting",
-        value: "Nipple | Brass"
-      }
-    ],
-
-    applications: [
-      "Medical Equipment Sterilization",
-      "Food Processing",
-      "Water Treatment",
-      "Laboratory Sterilization",
-      "Beauty and Spa Equipment Sterilization"
-    ],
-
-    images: [
-      "/Industrial Heater/CMO Band Nipple Sterilizer Element.png",
-      "/Industrial Heater/CMO Band Nipple Sterilizer Element 2.png",
-    ]
-  },
-
-  {
-    slug: "ceramic-infrared-heater",
-    name: "Ceramic Infrared Heater",
-    category: "industrial-heater",
-    model: "Ceramic Infrared Heater",
-    badge: "Industrial",
-
-    shortDescription:
-      "Ceramic infrared heating elements designed for targeted and efficient radiant heating in industrial, medical, aerospace, semiconductor, HVAC, automotive, and 3D printing applications.",
-
-    description:
-      "Ceramic Infrared Heaters are radiant heating elements that transfer heat through infrared radiation, allowing heat to be directed toward the required surface or material without direct contact. They are suitable for controlled heating, drying, curing, preheating, and other thermal processing applications. These heaters can be supplied in different wattages and customized sizes to suit specific equipment and installation requirements. They are used across industrial heating, medical equipment, aerospace, semiconductor manufacturing, HVAC, automotive, and 3D printing applications.",
-
-    features: [
-      "Ceramic infrared heating technology",
-      "Radiant, contactless heat transfer",
-      "Available in 100W and 1000W configurations",
-      "220-240V voltage configuration",
-      "Stainless steel construction",
-      "Available in 10ML, 15ML and 20ML lengths",
-      "Customizable diameter according to requirements",
-      "Internal or external wire crimping options",
-      "Suitable for targeted and controlled heating",
-      "Suitable for customized industrial heating applications"
-    ],
-
-    specs: [
-      {
-        label: "Product Type",
-        value: "Ceramic Infrared Heater"
-      },
-      {
-        label: "SKU",
-        value: "—"
-      },
-      {
-        label: "Wattage",
-        value: "100W | 1000W | Customizable"
-      },
-      {
-        label: "Voltage",
-        value: "220-240V"
-      },
-      {
-        label: "Material",
-        value: "Stainless Steel"
-      },
-      {
-        label: "Master Packing",
-        value: "20 Pcs."
-      },
-      {
-        label: "Size (Length)",
-        value: "10ML | 15ML | 20ML"
-      },
-      {
-        label: "Diameter",
-        value: "Customizable"
-      },
-      {
-        label: "Wire Crimping",
-        value: "Internal | External"
-      }
-    ],
-
-    applications: [
-      "Industrial Heating",
-      "Medical Equipment",
-      "Aerospace",
-      "Semiconductor Manufacturing",
-      "HVAC",
-      "Automotive",
-      "3D Printing"
-    ],
-
-    images: [
-      "/Industrial Heater/Ceramic-Infrared-Heater.webp",
-      "/Industrial Heater/Ceramic-Infrared-Heater 2.webp",
+      "/Industrial Heater/high density cartidge heater 1.png",
+      "/Industrial Heater/high density 2.png",
+      "/Industrial Heater/high density 3.png",
+      "/Industrial Heater/high density 4.png",
     ]
   },
 
@@ -1004,8 +494,8 @@ export const products = [
     ],
 
     images: [
-      "/Industrial Heater/straight type spiral heater.webp",
-      "/Industrial Heater/straight type spiral heater 2.webp",
+      "/Industrial Heater/straight type spiral heater.png",
+      "/Industrial Heater/straight type spiral heater 2.png",
     ]
   },
 
@@ -1115,6 +605,611 @@ export const products = [
   },
 
   {
+    slug: "immersion-heater",
+    name: "Immersion Heater",
+    category: "industrial-heater",
+    model: "Immersion Heater",
+    badge: "Industrial",
+
+    shortDescription:
+      "Heavy-duty threaded immersion heaters designed for direct heating of water, oils, chemical solutions, process fluids, and other industrial liquids.",
+
+    description:
+      "The Immersion Heater is a direct-contact electric heating solution designed for heating liquids and process fluids inside tanks, vessels, and other industrial equipment. The heating element is installed through a threaded connection, allowing the heated portion to be immersed directly into the medium. Direct immersion provides efficient transfer of electrical heat to the surrounding liquid and is widely used for water heating, oil heating, chemical processing, food processing, laboratory applications, and other industrial processes. The heater is available in multiple wattage configurations from 500W to 12000W, with stainless steel, mild steel, and Incoloy material options. Different thread sizes, lengths, and washer materials are available to accommodate specific tank and installation requirements. Industrial immersion heaters are commonly used for process water, oils, heat-transfer fluids, and compatible chemical solutions.",
+
+    features: [
+      "Direct immersion heating design",
+      "Threaded mounting configuration for tank and vessel installation",
+      "Designed for heating liquids and process fluids",
+      "Available from 500W to 12000W",
+      "Customizable wattage according to application requirements",
+      "230-440V voltage configuration",
+      "Available in stainless steel, M.S. and Incoloy construction",
+      "Available in 9\" and 12\" standard lengths",
+      "Customizable length according to requirements",
+      "2\" and 2.5\" thread size options",
+      "BSP thread configuration available",
+      "Rubber, silicone and fibre washer options",
+      "Suitable for water, oils, chemical solutions and process fluids",
+      "Suitable for industrial tanks, vessels and process-heating equipment"
+    ],
+
+    specs: [
+      {
+        label: "Product Type",
+        value: "Immersion Heater"
+      },
+      {
+        label: "SKU",
+        value: "—"
+      },
+      {
+        label: "Wattage",
+        value: "500W to 12000W | Customizable"
+      },
+      {
+        label: "Voltage",
+        value: "230-440V"
+      },
+      {
+        label: "Material",
+        value: "Stainless Steel | M.S. | Incoloy"
+      },
+      {
+        label: "Master Packing",
+        value: "12 Pcs."
+      },
+      {
+        label: "Length",
+        value: "9\" | 12\" | Customizable"
+      },
+      {
+        label: "Thread Size",
+        value: "2\" | 2.5\" | BSP"
+      },
+      {
+        label: "Washer",
+        value: "Rubber | Silicone | Fibre"
+      },
+      {
+        label: "Heating Method",
+        value: "Direct Immersion"
+      },
+      {
+        label: "Mounting",
+        value: "Threaded / Screw Plug"
+      }
+    ],
+
+    applications: [
+      "Chemical Industry",
+      "Cement Curing",
+      "Oil and Gas Industry",
+      "Food Processing",
+      "Laboratories",
+      "Aroma Oils"
+    ],
+
+    images: [
+      "/Industrial Heater/immersion heater 2.png",
+      "/Industrial Heater/immersion heater.png",
+      "/Industrial Heater/immersion heater 3.png",
+    ]
+  },
+
+  {
+    slug: "coil-heater",
+    name: "Coil Heater",
+    category: "industrial-heater",
+    model: "Coil Heater",
+    badge: "Industrial",
+
+    shortDescription:
+      "Compact coiled heating elements designed for precise localized heating of hot runner systems, injection moulding equipment, nozzles, manifolds, and other industrial components.",
+
+    description:
+      "The Coil Heater is a compact electric heating element designed for localized and controlled heating where installation space is limited. Its coiled construction allows the heater to follow the shape of the component being heated, making it suitable for cylindrical and application-specific heating surfaces. Coil heaters are widely used in hot runner systems, injection moulding machines, extrusion equipment, blow moulding machines, thermoforming equipment, packaging machinery, nozzles, and manifolds. BPS Industries provides customizable Coil Heaters with configurations developed according to the required heating area, dimensions, electrical rating, and equipment design. The compact form factor makes them suitable for applications requiring concentrated heating around nozzles, barrels, dies, and other industrial components.",
+
+    features: [
+      "Compact coiled electric heating element",
+      "Designed for localized and controlled heating",
+      "Suitable for compact and restricted installation spaces",
+      "Coiled construction for application-specific fitting",
+      "Suitable for hot runner systems",
+      "Suitable for injection moulding machines",
+      "Suitable for extrusion machines",
+      "Suitable for blow moulding machines",
+      "Suitable for thermoforming equipment",
+      "Suitable for packaging machinery",
+      "Suitable for heating nozzles and manifolds",
+      "Customizable wattage according to application requirements",
+      "Customizable voltage according to equipment requirements",
+      "Customizable coil diameter and dimensions",
+      "Customizable heating length",
+      "Application-specific heating configuration"
+    ],
+
+    specs: [
+      {
+        label: "Product Type",
+        value: "Coil Heater"
+      },
+      {
+        label: "SKU",
+        value: "—"
+      },
+      {
+        label: "Wattage",
+        value: "Customizable"
+      },
+      {
+        label: "Voltage",
+        value: "Customizable"
+      },
+      {
+        label: "Material",
+        value: "Application Specific"
+      },
+      {
+        label: "Coil Diameter",
+        value: "Customizable"
+      },
+      {
+        label: "Heating Length",
+        value: "Customizable"
+      },
+      {
+        label: "Shape",
+        value: "Coiled / Application Specific"
+      },
+      {
+        label: "Heating Method",
+        value: "Electrical Resistance"
+      },
+      {
+        label: "Configuration",
+        value: "Customizable"
+      }
+    ],
+
+    applications: [
+      "Hot Runner Systems",
+      "Injection Moulding Machines",
+      "Extrusion Machines",
+      "Blow Moulding Machines",
+      "Thermoforming Machines",
+      "Injection Moulding Nozzles",
+      "Hot Runner Nozzles",
+      "Manifolds",
+      "Packaging Machinery"
+    ],
+
+    images: [
+      "/Industrial Heater/coil heater.png",
+      "/Industrial Heater/coil heater 2.png",
+      "/Industrial Heater/coil heater 3.png",
+      "/Industrial Heater/coil heater 4.png",
+    ]
+  },
+
+  {
+    slug: "u-nipple-sterilizer-element",
+    name: "U Nipple Sterilizer Element",
+    category: "industrial-heater",
+    model: "U Nipple Sterilizer Element",
+    badge: "Sterilizer",
+
+    shortDescription:
+      "U-shaped nipple heating elements designed for efficient water heating in sterilizers, medical equipment, food processing, laboratories, and other heating applications.",
+
+    description:
+      "The U Nipple Sterilizer Element is a tubular electric heating element designed to rapidly and consistently heat water in sterilization and process-heating equipment. Its U-shaped construction provides an extended heating surface while the nipple mounting arrangement allows the element to be securely installed through a tank or vessel. Available in stainless steel and copper constructions, the element can be supplied in different wattages and lengths to suit specific equipment requirements. It is suitable for medical equipment sterilization, food processing, water treatment, laboratory sterilization, and beauty and spa equipment.",
+
+    features: [
+      "U-shaped tubular heating element",
+      "Available in stainless steel and copper construction",
+      "Designed for water heating and sterilization equipment",
+      "Available in 500W, 1500W, 2000W and 3000W variants",
+      "220-240V operating voltage",
+      "Available in 12\", 18\" and 24\" lengths",
+      "Custom lengths available as required",
+      "8.7mm standard element diameter",
+      "Nipple-mounted design for installation through tanks and vessels",
+      "Suitable for medical, laboratory, food processing and water treatment applications"
+    ],
+
+    specs: [
+      {
+        label: "Product Type",
+        value: "U Nipple Sterilizer Element"
+      },
+      {
+        label: "SKU",
+        value: "AE-20-23"
+      },
+      {
+        label: "Wattage",
+        value: "500W | 1500W | 2000W | 3000W | Customizable"
+      },
+      {
+        label: "Voltage",
+        value: "220-240V"
+      },
+      {
+        label: "Material",
+        value: "Stainless Steel | Copper"
+      },
+      {
+        label: "Diameter",
+        value: "8.7mm"
+      },
+      {
+        label: "Length",
+        value: "12\" | 18\" | 24\" | Customizable"
+      },
+      {
+        label: "Master Packing",
+        value: "25 Pcs."
+      },
+      {
+        label: "Shape",
+        value: "U Type"
+      },
+      {
+        label: "Mounting",
+        value: "Nipple Mount"
+      }
+    ],
+
+    applications: [
+      "Medical Equipment Sterilization",
+      "Food Processing",
+      "Water Treatment",
+      "Laboratory Sterilization",
+      "Beauty and Spa Equipment Sterilization"
+    ],
+
+    images: [
+      "/Industrial Heater/U Nipple Sterilizer Element.webp",
+      "/Industrial Heater/U Nipple Sterilizer Element 2.webp",
+      "/Industrial Heater/U Nipple Sterilizer Element 3.webp"
+    ]
+  },
+
+  {
+    slug: "u-l-nipple-sterilizer-element",
+    name: "U+L Nipple Sterilizer Element",
+    category: "industrial-heater",
+    model: "U+L Nipple Sterilizer Element",
+    badge: "Sterilizer",
+
+    shortDescription:
+      "U+L shaped tubular heating elements designed for reliable heating in sterilizers, medical equipment, water treatment, food processing, and laboratory applications.",
+
+    description:
+      "The U+L Nipple Sterilizer Element is a tubular electric heating element designed for efficient and controlled heating in sterilization and process-heating equipment. Its U+L configuration provides an extended heating surface while the nipple mounting arrangement allows convenient installation through tanks, vessels, and sterilizer equipment. Available in stainless steel and copper constructions, the element is offered in multiple wattage and length options and can be customized according to specific equipment and heating requirements. It is suitable for medical equipment sterilization, food processing, water treatment, laboratory sterilization, and beauty and spa equipment.",
+
+    features: [
+      "U+L shaped tubular heating element",
+      "Available in stainless steel and copper construction",
+      "Nipple mounting design for equipment installation",
+      "Available in 500W, 1500W, 2000W and 3000W variants",
+      "220-240V voltage configuration",
+      "Available in 12\", 18\" and 24\" lengths",
+      "Customizable length according to requirements",
+      "Available in 8mm and 10.8mm diameter options",
+      "Suitable for sterilization and water-heating equipment",
+      "Suitable for medical, laboratory and food-processing applications"
+    ],
+
+    specs: [
+      {
+        label: "Product Type",
+        value: "U+L Nipple Sterilizer Element"
+      },
+      {
+        label: "SKU",
+        value: "AE-20-23"
+      },
+      {
+        label: "Wattage",
+        value: "500W | 1500W | 2000W | 3000W | Customizable"
+      },
+      {
+        label: "Voltage",
+        value: "220-240V"
+      },
+      {
+        label: "Material",
+        value: "Stainless Steel | Copper"
+      },
+      {
+        label: "Master Packing",
+        value: "25 Pcs."
+      },
+      {
+        label: "Length",
+        value: "12\" | 18\" | 24\" | Customizable"
+      },
+      {
+        label: "Diameter",
+        value: "8mm | 10.8mm"
+      },
+      {
+        label: "Shape",
+        value: "U+L Type"
+      },
+      {
+        label: "Fittings",
+        value: "Nipple | Brass"
+      }
+    ],
+
+    applications: [
+      "Medical Equipment Sterilization",
+      "Food Processing",
+      "Water Treatment",
+      "Laboratory Sterilization",
+      "Beauty and Spa Equipment Sterilization"
+    ],
+
+    images: [
+      "/Industrial Heater/U+L Nipple Sterilizer Element.webp",
+    ]
+  },
+
+  {
+    slug: "cmo-band-nipple-sterilizer-element",
+    name: "CMO Band Nipple Sterilizer Element",
+    category: "industrial-heater",
+    model: "CMO Band Nipple Sterilizer Element",
+    badge: "Sterilizer",
+
+    shortDescription:
+      "Band-type nipple heating elements designed for reliable heating in sterilizers, medical equipment, food processing, water treatment, and laboratory applications.",
+
+    description:
+      "The CMO Band Nipple Sterilizer Element is an electric heating element designed for sterilization and process-heating equipment. Its band-type heating configuration provides a practical solution for heating applications where the element is installed through a nipple-mounted connection. Available in stainless steel and copper constructions, it is offered in multiple wattage and length options to accommodate different equipment requirements. The element is suitable for medical equipment sterilization, food processing, water treatment, laboratory sterilization, and beauty and spa equipment sterilization.",
+
+    features: [
+      "Band-type heating element design",
+      "Nipple mounting configuration",
+      "Available in stainless steel and copper",
+      "Available in 500W, 1500W, 2000W and 3000W variants",
+      "220-240V voltage configuration",
+      "Available in 12\", 18\" and 24\" lengths",
+      "Customizable length according to requirements",
+      "Available in 8mm and 10.8mm diameter options",
+      "Brass nipple fitting option",
+      "Suitable for sterilization and water-treatment equipment"
+    ],
+
+    specs: [
+      {
+        label: "Product Type",
+        value: "CMO Band Nipple Sterilizer Element"
+      },
+      {
+        label: "SKU",
+        value: "—"
+      },
+      {
+        label: "Wattage",
+        value: "500W | 1500W | 2000W | 3000W | Customizable"
+      },
+      {
+        label: "Voltage",
+        value: "220-240V"
+      },
+      {
+        label: "Material",
+        value: "Stainless Steel | Copper"
+      },
+      {
+        label: "Master Packing",
+        value: "25 Pcs."
+      },
+      {
+        label: "Length",
+        value: "12\" | 18\" | 24\" | Customizable"
+      },
+      {
+        label: "Diameter",
+        value: "8mm | 10.8mm"
+      },
+      {
+        label: "Element Type",
+        value: "Band Type"
+      },
+      {
+        label: "Fitting",
+        value: "Nipple | Brass"
+      }
+    ],
+
+    applications: [
+      "Medical Equipment Sterilization",
+      "Food Processing",
+      "Water Treatment",
+      "Laboratory Sterilization",
+      "Beauty and Spa Equipment Sterilization"
+    ],
+
+    images: [
+      "/Industrial Heater/CMO Band Nipple Sterilizer Element.png",
+      "/Industrial Heater/CMO Band Nipple Sterilizer Element 2.png",
+    ]
+  },
+
+  {
+    slug: "porcelain-heater",
+    name: "Porcelain Heater",
+    category: "industrial-heater",
+    model: "Porcelain Heater",
+    badge: "Industrial",
+
+    shortDescription:
+      "Industrial porcelain heating elements designed for efficient heating of water, oil, chemical solutions, plating baths, ovens, and other process applications.",
+
+    description:
+      "Porcelain Heaters are robust industrial heating elements designed for direct and indirect heating applications. Constructed with ceramic porcelain insulation around a resistance heating element, they provide reliable heat transfer for a wide range of industrial processes. These heaters are commonly used for heating water, oil, foodstuff, alkaline solutions, anodizing and plating baths, chemical processing tanks, medium-size ovens, powder coating booths, and chemical and paint industry equipment. The heater can be supplied in different wattages, diameters, voltages, and customized lengths according to the application's heating and installation requirements.",
+
+    features: [
+      "High-temperature ceramic porcelain insulation",
+      "Suitable for industrial liquid and process heating",
+      "Available in 500W, 1000W and 2000W configurations",
+      "Voltage options of 220-240V and 415-440V",
+      "Available in multiple heater diameters",
+      "Customizable heater length",
+      "Suitable for horizontal and vertical installation",
+      "Can be supplied with suitable mounting arrangements",
+      "Designed for water, oil and foodstuff heating",
+      "Suitable for anodizing and plating baths",
+      "Suitable for alkaline and chemical solutions",
+      "Suitable for ovens and powder coating applications"
+    ],
+
+    specs: [
+      {
+        label: "Product Type",
+        value: "Porcelain Heater"
+      },
+      {
+        label: "Wattage",
+        value: "500W | 1000W | 2000W | Customizable"
+      },
+      {
+        label: "Voltage",
+        value: "220-240V | 415-440V"
+      },
+      {
+        label: "Material",
+        value: "Ceramic / Porcelain"
+      },
+      {
+        label: "Heater Diameter",
+        value: "32mm | 35mm | 45mm | 48mm | 80mm"
+      },
+      {
+        label: "Length",
+        value: "Customizable"
+      },
+      {
+        label: "Master Packing",
+        value: "25 Pcs."
+      },
+      {
+        label: "Mounting",
+        value: "As per application"
+      },
+      {
+        label: "Installation",
+        value: "Horizontal / Vertical"
+      }
+    ],
+
+    applications: [
+      "Water Heating",
+      "Foodstuff Heating",
+      "Oil Heating",
+      "Anodizing Baths",
+      "Plating Baths",
+      "Alkaline Solutions",
+      "Phosphoric Acid Processing",
+      "Chromic Acid Processing",
+      "Medium-Size Ovens",
+      "Powder Coating Booths",
+      "Chemical Industry",
+      "Paint Industry"
+    ],
+
+    images: [
+      "/Industrial Heater/Porcelain-Heater.webp"
+    ]
+  },
+
+  {
+    slug: "ceramic-infrared-heater",
+    name: "Ceramic Infrared Heater",
+    category: "industrial-heater",
+    model: "Ceramic Infrared Heater",
+    badge: "Industrial",
+
+    shortDescription:
+      "Ceramic infrared heating elements designed for targeted and efficient radiant heating in industrial, medical, aerospace, semiconductor, HVAC, automotive, and 3D printing applications.",
+
+    description:
+      "Ceramic Infrared Heaters are radiant heating elements that transfer heat through infrared radiation, allowing heat to be directed toward the required surface or material without direct contact. They are suitable for controlled heating, drying, curing, preheating, and other thermal processing applications. These heaters can be supplied in different wattages and customized sizes to suit specific equipment and installation requirements. They are used across industrial heating, medical equipment, aerospace, semiconductor manufacturing, HVAC, automotive, and 3D printing applications.",
+
+    features: [
+      "Ceramic infrared heating technology",
+      "Radiant, contactless heat transfer",
+      "Available in 100W and 1000W configurations",
+      "220-240V voltage configuration",
+      "Stainless steel construction",
+      "Available in 10ML, 15ML and 20ML lengths",
+      "Customizable diameter according to requirements",
+      "Internal or external wire crimping options",
+      "Suitable for targeted and controlled heating",
+      "Suitable for customized industrial heating applications"
+    ],
+
+    specs: [
+      {
+        label: "Product Type",
+        value: "Ceramic Infrared Heater"
+      },
+      {
+        label: "SKU",
+        value: "—"
+      },
+      {
+        label: "Wattage",
+        value: "100W | 1000W | Customizable"
+      },
+      {
+        label: "Voltage",
+        value: "220-240V"
+      },
+      {
+        label: "Material",
+        value: "Stainless Steel"
+      },
+      {
+        label: "Master Packing",
+        value: "20 Pcs."
+      },
+      {
+        label: "Size (Length)",
+        value: "10ML | 15ML | 20ML"
+      },
+      {
+        label: "Diameter",
+        value: "Customizable"
+      },
+      {
+        label: "Wire Crimping",
+        value: "Internal | External"
+      }
+    ],
+
+    applications: [
+      "Industrial Heating",
+      "Medical Equipment",
+      "Aerospace",
+      "Semiconductor Manufacturing",
+      "HVAC",
+      "Automotive",
+      "3D Printing"
+    ],
+
+    images: [
+      "/Industrial Heater/Ceramic-Infrared-Heater.webp",
+      "/Industrial Heater/Ceramic-Infrared-Heater 2.webp",
+    ]
+  },
+
+  {
     slug: "square-finned-straight-type-heater",
     name: "Square Finned Straight Type Heater",
     category: "industrial-heater",
@@ -1214,98 +1309,7 @@ export const products = [
     ]
   },
 
-  {
-    slug: "immersion-heater",
-    name: "Immersion Heater",
-    category: "industrial-heater",
-    model: "Immersion Heater",
-    badge: "Industrial",
 
-    shortDescription:
-      "Heavy-duty threaded immersion heaters designed for direct heating of water, oils, chemical solutions, process fluids, and other industrial liquids.",
-
-    description:
-      "The Immersion Heater is a direct-contact electric heating solution designed for heating liquids and process fluids inside tanks, vessels, and other industrial equipment. The heating element is installed through a threaded connection, allowing the heated portion to be immersed directly into the medium. Direct immersion provides efficient transfer of electrical heat to the surrounding liquid and is widely used for water heating, oil heating, chemical processing, food processing, laboratory applications, and other industrial processes. The heater is available in multiple wattage configurations from 500W to 12000W, with stainless steel, mild steel, and Incoloy material options. Different thread sizes, lengths, and washer materials are available to accommodate specific tank and installation requirements. Industrial immersion heaters are commonly used for process water, oils, heat-transfer fluids, and compatible chemical solutions.",
-
-    features: [
-      "Direct immersion heating design",
-      "Threaded mounting configuration for tank and vessel installation",
-      "Designed for heating liquids and process fluids",
-      "Available from 500W to 12000W",
-      "Customizable wattage according to application requirements",
-      "230-440V voltage configuration",
-      "Available in stainless steel, M.S. and Incoloy construction",
-      "Available in 9\" and 12\" standard lengths",
-      "Customizable length according to requirements",
-      "2\" and 2.5\" thread size options",
-      "BSP thread configuration available",
-      "Rubber, silicone and fibre washer options",
-      "Suitable for water, oils, chemical solutions and process fluids",
-      "Suitable for industrial tanks, vessels and process-heating equipment"
-    ],
-
-    specs: [
-      {
-        label: "Product Type",
-        value: "Immersion Heater"
-      },
-      {
-        label: "SKU",
-        value: "—"
-      },
-      {
-        label: "Wattage",
-        value: "500W to 12000W | Customizable"
-      },
-      {
-        label: "Voltage",
-        value: "230-440V"
-      },
-      {
-        label: "Material",
-        value: "Stainless Steel | M.S. | Incoloy"
-      },
-      {
-        label: "Master Packing",
-        value: "12 Pcs."
-      },
-      {
-        label: "Length",
-        value: "9\" | 12\" | Customizable"
-      },
-      {
-        label: "Thread Size",
-        value: "2\" | 2.5\" | BSP"
-      },
-      {
-        label: "Washer",
-        value: "Rubber | Silicone | Fibre"
-      },
-      {
-        label: "Heating Method",
-        value: "Direct Immersion"
-      },
-      {
-        label: "Mounting",
-        value: "Threaded / Screw Plug"
-      }
-    ],
-
-    applications: [
-      "Chemical Industry",
-      "Cement Curing",
-      "Oil and Gas Industry",
-      "Food Processing",
-      "Laboratories",
-      "Aroma Oils"
-    ],
-
-    images: [
-      "/Industrial Heater/Immersion Heater 2.webp",
-      "/Industrial Heater/Immersion Heater.webp",
-      "/Industrial Heater/Immersion Heater 3.webp"
-    ]
-  },
 
   {
     slug: "alkaline-heater",
